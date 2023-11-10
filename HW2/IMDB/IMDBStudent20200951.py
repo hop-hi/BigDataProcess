@@ -17,7 +17,7 @@ def count_genres(input_file):
             return genre_count
 
     except FileNotFoundError:
-        print("Error: {"파일이 없습니다.")
+        print("파일이 없습니다.")
         return None
 
 def write_result(output_file, genre_count):
