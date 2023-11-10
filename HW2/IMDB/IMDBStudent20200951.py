@@ -17,7 +17,7 @@ def count_genres(input_file):
             return genre_count
 
     except FileNotFoundError:
-        print(f"Error: {input_file} not found.")
+        print("Error: {"파일이 없습니다.")
         return None
 
 def write_result(output_file, genre_count):
@@ -25,11 +25,8 @@ def write_result(output_file, genre_count):
         with open(output_file, 'w', encoding='utf-8') as file:
             for genre, count in genre_count.items():
                 file.write("{} {}\n".format(genre, count))
-
-        print("Results written to {}".format(output_file))
-
     except Exception as e:
-        print("Error writing to {}: {}".format(output_file, e))
+        print(e)
 
 if __name__ == "__main__":
     import sys
