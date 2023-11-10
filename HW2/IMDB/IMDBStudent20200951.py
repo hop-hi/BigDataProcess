@@ -40,9 +40,7 @@ if __name__ == "__main__":
     input_file = sys.argv[1]
     output_file = sys.argv[2]
 
-    # 장르별 영화 수 계산
     genre_count = count_genres(input_file)
 
     if genre_count is not None:
-        # 결과를 출력 파일에 쓰기
         write_result(output_file, genre_count)
